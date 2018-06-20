@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validateur", "Validateur\Validateur.csproj", "{2E060046-D873-470D-9CBE-6CE80AA44653}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension.Validateur", "Validateur\Extension.Validateur.csproj", "{2E060046-D873-470D-9CBE-6CE80AA44653}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extension", "Extension", "{63B264AF-508D-4CA5-AEF6-C01C8BF92B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension.Validateur.Test", "Extension.Validateur.Test\Extension.Validateur.Test.csproj", "{15B99D59-9844-4745-ADBA-3368EC785B37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,16 @@ Global
 		{2E060046-D873-470D-9CBE-6CE80AA44653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E060046-D873-470D-9CBE-6CE80AA44653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E060046-D873-470D-9CBE-6CE80AA44653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B99D59-9844-4745-ADBA-3368EC785B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B99D59-9844-4745-ADBA-3368EC785B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B99D59-9844-4745-ADBA-3368EC785B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B99D59-9844-4745-ADBA-3368EC785B37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E060046-D873-470D-9CBE-6CE80AA44653} = {63B264AF-508D-4CA5-AEF6-C01C8BF92B09}
+		{15B99D59-9844-4745-ADBA-3368EC785B37} = {63B264AF-508D-4CA5-AEF6-C01C8BF92B09}
 	EndGlobalSection
 EndGlobal
