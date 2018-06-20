@@ -21,14 +21,14 @@ namespace Validateur.Type.Nombre
         {
             i.NonNull(nomParametre);
 
-            if(i>valeurMaximum || i < valeurMinimum)
+            if (i > valeurMaximum || i < valeurMinimum)
             {
                 throw new ArgumentException($"Le paramètre {nomParametre} n'est pas compris entre {valeurMinimum} et {valeurMaximum}");
             }
         }
 
         /// <summary>
-        /// Lance une exception si la valeur est supérieur.
+        /// Lance une exception si la valeur est supérieur a la valeur minimale.
         /// </summary>
         /// <param name="valeurMaximum">Valeur maximum.</param>
         /// <param name="nomParametre">Nom du parametre.</param>
@@ -38,7 +38,7 @@ namespace Validateur.Type.Nombre
 
             if (i > valeurMaximum)
             {
-                throw new ArgumentException($"Le paramètre {nomParametre} doit être suérieur à {valeurMaximum}.");
+                throw new ArgumentException($"Le paramètre {nomParametre} doit être inférieur à {valeurMaximum}.");
             }
         }
 
@@ -81,7 +81,7 @@ namespace Validateur.Type.Nombre
 
             if (i < valeurMinimum)
             {
-                throw new ArgumentException($"Le paramètre {nomParametre} doit être inférieur à {valeurMinimum}.");
+                throw new ArgumentException($"Le paramètre {nomParametre} doit être supérieur à {valeurMinimum}.");
             }
         }
     }
